@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Toolbox</title>
-    <link rel="shortcut icon" href="img/icon.png">
-    <script type="text/javascript" src="js/main.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <base target="_blank">
-  </head>
-  <body>
-    <div class="tab">
-			<button class="tablinks" onclick="openPage(event, 'button1')">Button1</button>
-			<button class="tablinks" onclick="openPage(event, 'button2')">Button2</button>
-		</div>
-  </body>
+<head>
+        <title>Toolbox</title>
+        <link rel="shortcut icon" href="img/icon.png">
+        <script type="text/javascript" src="js/main.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <base target="_blank">
+</head>
+<body>
+        <div class="tab">
+                <button class="tablinks" onclick="openPage(event, 'button1')">Button1</button>
+                <button class="tablinks" onclick="openPage(event, 'button2')">Button2</button>
+        </div>
+        
+        <div id="button1" class="tabcontent" style="display: block;">
+                <p>Button content 1</p>
+	</div>
+
+        <div id="button2" class="tabcontent">
+                <p>Button content 2</p>
+        </div>
+</body>
 </html>
