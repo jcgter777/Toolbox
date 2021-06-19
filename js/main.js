@@ -11,17 +11,8 @@ function openPage(evt, pageName) {
 	document.getElementById(pageName).style.display = "block";
 	evt.currentTarget.className += " active";
 }
-//below 2 functions activate upon clicking the toggle button, changing the body's class to night-mode
-function toggle_night_mode() {
-	set_night_mode(!config['night_mode']);
-}
 
-function set_night_mode(state) {
-  if (state) {
-    document.body.classList.add('night-mode');
-  } else {
-    document.body.classList.remove('night-mode');
-  }
-  config['night_mode'] = state;
-  localStorage.thebutton_config = JSON.stringify(config);
+function nightMode() {
+	var element = document.body;
+    element.classList.toggle("night-mode");
 }
