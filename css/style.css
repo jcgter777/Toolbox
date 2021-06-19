@@ -10,13 +10,14 @@
 .visible {
  display: block;
 }
-
+/*tab styling*/
 .tab {
  overflow: hidden;
  border: none;
- background-color: aliceblue;
+ background-color: whitesmoke;
  margin: 0px; 
- border-radius: 10px;
+ border-radius: 5px;
+ height: 50px;
 }
 
 .tab button {
@@ -28,27 +29,48 @@
  padding: 10px 15px;
  transition: 0.3s;
  font-size: medium;
+ height: inherit;
 }
 
 .tab button:hover {
-  background-color: #87ceeb99;
+  background-color: #D3D3D3;
 }
 
 .tab button.active {
- background-color: skyblue;
+ background-color: #808080;
 }
 
 .tabcontent {
  display: none;
- border: 1px solid whitesmoke;
- margin-top: 0px;
- padding: 0px;
+ border: 1px solid black;
+ margin: 0;
+ padding: 10px;
  animation: fadeEffect .3s;
  background: rgb(254,254,254);
  border-radius: 10px;
- color: black;
 }
 
 .tabcontent text {
   right: 20px;
+}
+/*night-mode toggle button attributes*/
+#togBut {
+  transition: all 0.2s ease 0s;
+  float: right;
+}
+
+#togBut:hover {
+  background: black;
+  color: white;
+}
+
+#togBut:active {
+  background: black;
+  color: white;
+}
+/*code that dictates what the night-mode class looks like*/
+body.night-mode {
+  background: black;
+  -webkit-filter: invert(1) hue-rotate(180deg);
+  filter: invert(1) hue-rotate(180deg);
 }
