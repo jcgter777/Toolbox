@@ -54,17 +54,17 @@
   right: 20px;
 }
 /*night-mode toggle button attributes*/
-#togBut {
+#toggle {
   transition: all 0.2s ease 0s;
   float: right;
 }
 
-#togBut:hover {
+#toggle:hover {
   background: black;
   color: white;
 }
 
-#togBut:active {
+#toggle:active {
   background: black;
   color: white;
 }
