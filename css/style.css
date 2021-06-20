@@ -62,8 +62,13 @@ h1 {
   color: white;
 }
 
-#toggle.active {
-  backgroumd: white;
+#toggle.night-mode:hover {
+  background: black;
+  color: white;
+}
+
+#toggle {
+  background: white;
   color: black;
 }
 /*code that dictates what the night-mode class looks like*/
