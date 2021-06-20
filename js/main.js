@@ -21,5 +21,4 @@ function nightMode() {
 	var body = document.body;
 	var button = document.getElementById('toggle');
 	body.classList.toggle("night-mode");
-	button.className += " active";
 }
