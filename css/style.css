@@ -62,9 +62,9 @@ h1 {
   color: white;
 }
 
-#toggle:active {
-  background: black;
-  color: white;
+#toggle.active {
+  backgroumd: white;
+  color: black;
 }
 /*code that dictates what the night-mode class looks like*/
 body.night-mode {
