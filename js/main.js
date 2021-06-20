@@ -18,6 +18,8 @@ function openPage(evt, pageName) {
 }
 //toggles night mode on click
 function nightMode() {
-	var element = document.body;
-    element.classList.toggle("night-mode");
+	var body = document.body;
+	var button = document.getElementById('toggle');
+	body.classList.toggle("night-mode");
+	button.classList.toggle("night-mode");
 }
