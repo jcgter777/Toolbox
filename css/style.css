@@ -55,11 +55,13 @@ h1 {
 #toggle {
   transition: all 0.2s ease 0s;
   float: right;
+  background: black;
+  color: white;
 }
 
 #toggle:hover {
-  background: black;
-  color: white;
+  background: white;
+  color: black;
 }
 
 #toggle.night-mode:hover {
@@ -67,10 +69,6 @@ h1 {
   color: white;
 }
 
-#toggle {
-  background: white;
-  color: black;
-}
 /*code that dictates what the night-mode class looks like*/
 body.night-mode {
   background: black;
